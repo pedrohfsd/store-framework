@@ -1,11 +1,13 @@
 {
   "store.search": {
     "blocks": [
-        "search-result-layout",
-        "gallery",
-        "not-found"
+        "search-result-layout"
     ]
   },
+  "search-content": {
+      "blocks": ["gallery", "not-found"]
+    },
+    
   "gallery": {
       "blocks": [
         "product-summary.shelf"
