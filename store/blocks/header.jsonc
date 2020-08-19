@@ -11,6 +11,11 @@
       "header-layout.mobile"
     ]
   },
+
+
+
+  // DESKTOP
+  // -------------------------------
   "header-layout.desktop": {
     "children": [
       "header-row#notification",
@@ -18,20 +23,7 @@
       "header-row#menu"
     ]
   },
-  "header-layout.mobile": {
-    "children": [
-      "header-row#notification",
-      "header-row#main-mobile",
-      "header-row#search"
-    ]
-  },
-  "header-row#notification": {
-    "children": [
-      "header-spacer",
-      "rich-text#header",
-      "header-spacer"
-    ]
-  },
+  // -------------------------------
   "header-row#main": {
     "children": [
       "logo",
@@ -46,6 +38,41 @@
       "fullWidth": false
     }
   },
+  // -------------------------------
+  "logo": {
+    "props": {
+      "url": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/flatflat___6081e50402943bcb11bc45a8e613aa72.png"
+    }
+  },
+  // -------------------------------
+  "login": {
+    "props": {
+      "showIconProfile": true,
+      "iconLabel": "Login"
+    }
+  },
+  // -------------------------------
+  // See menu in `/store/blocks/menu.jsonc`
+  "header-row#menu": {
+    "children": [
+      "header-spacer",
+      "vtex.menu@2.x:menu#categories",
+      "header-spacer"
+    ]
+  },
+
+
+
+  // MOBILE
+  // -------------------------------
+  "header-layout.mobile": {
+    "children": [
+      "header-row#notification",
+      "header-row#main-mobile",
+      "header-row#search"
+    ]
+  },
+  // -------------------------------
   "header-row#main-mobile": {
     "children": [
       "drawer",
@@ -56,9 +83,10 @@
     ],
     "props": {
       "sticky": true,
-      "inverted": true
+      "inverted":true
     }
   },
+  // -------------------------------
   "header-row#search": {
     "children": [
       "search-bar"
@@ -67,28 +95,24 @@
       "sticky": true
     }
   },
-  "login": {
-    "props": {
-      "showIconProfile": true,
-      "iconLabel": "Login"
-    }
+
+
+
+  // SHARED
+  // -------------------------------
+  "header-row#notification": {
+    "children": [
+      "header-spacer",
+      "rich-text#header",
+      "header-spacer"
+    ]
   },
-  "logo": {
-    "props": {
-      "url": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/flatflat___6081e50402943bcb11bc45a8e613aa72.png"
-    }
-  },
+  // -------------------------------
   "rich-text#header": {
     "props": {
       "text": "**Free Shipping on orders over $50**",
       "textPosition": "CENTER"
     }
-  },
-  "header-row#menu": {
-    "children": [
-      "header-spacer",
-      "vtex.menu@2.x:menu#categories",
-      "header-spacer"
-    ]
   }
+
 }

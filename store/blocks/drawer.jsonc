@@ -4,18 +4,20 @@
       "vtex.menu@2.x:menu#drawer"
     ]
   },
+
   "vtex.menu@2.x:menu#drawer": {
     "children": [
       "menu-item#major-appliances-acc",
       "menu-item#small-appliances-acc",
       "menu-item#electronics-acc"
     ],
-    "props": {
+    "props":{
       "orientation": "vertical"
     }
   },
   "menu-item#major-appliances-acc": {
-    "props": {
+    "props":
+    {
       "type": "category",
       "highlight": true,
       "itemProps": {
@@ -28,7 +30,8 @@
     ]
   },
   "menu-item#small-appliances-acc": {
-    "props": {
+    "props":
+    {
       "type": "category",
       "highlight": true,
       "itemProps": {
@@ -41,7 +44,8 @@
     ]
   },
   "menu-item#electronics-acc": {
-    "props": {
+    "props":
+    {
       "type": "category",
       "highlight": true,
       "itemProps": {
@@ -53,18 +57,18 @@
       "vtex.menu@2.x:submenu.accordion#electronics"
     ]
   },
-  "vtex.menu@2.x:submenu.accordion#major": {
-    "children": [
+  "vtex.menu@2.x:submenu.accordion#major":{
+    "children":[
       "vtex.menu@2.x:menu#major"
     ]
   },
-  "vtex.menu@2.x:submenu.accordion#small": {
-    "children": [
+  "vtex.menu@2.x:submenu.accordion#small":{
+    "children":[
       "vtex.menu@2.x:menu#small"
     ]
   },
-  "vtex.menu@2.x:submenu.accordion#electronics": {
-    "children": [
+  "vtex.menu@2.x:submenu.accordion#electronics":{
+    "children":[
       "vtex.menu@2.x:menu#electronics"
     ]
   }
